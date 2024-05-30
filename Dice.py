@@ -1,5 +1,7 @@
 # Create a class called Dice. Create a method roll_die. Create an object die and roll the die 10 times.
 
+from random import randint
+
 class Dice:
     '''
     Class of objects called Dice. The number of sides of each die is 6 by default.
@@ -28,5 +30,4 @@ class Dice:
             self.sides = 6
             print(f"The number of sides of the die has been set to: 6")
        
-        from random import randint
         return randint(1,self.sides)
